@@ -15,7 +15,7 @@ else
     make flash FLASH_DEVICE=$VENDORDEVICEID
 fi
 sleep 5
-if [$? -e 0]; then
+if [ $? -eq 0 ]; then
     echo "Flashing succesful!"
 else
     echo "Flashing failed :("
