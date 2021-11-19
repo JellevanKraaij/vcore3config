@@ -1,0 +1,6 @@
+# STM32-Mini12864
+## pass device name to bash script or edit make-and-flash-mcu.sh to look for the device name? The latter might be easier if you want to trigger via fluidd
+SUBSYSTEMS=="usb", ATTRS{idProduct}=="614f",  ATTRS{idVendor}=="1d50", ACTION=="add", SYMLINK+="stm32-mini12864", RUN+="/home/pi/klipper_config/v-core-3/scripts/klipper-mcu-added.sh"
+
+## need to handle remove for different device names
+ACTION=="remove", ENV{DEVLINKS}=="/dev/stm32-mini12864"
