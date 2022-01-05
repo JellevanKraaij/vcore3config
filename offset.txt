@@ -1,0 +1,5 @@
+z_offset = 2.260 #fr2 bed
+z_offset = 2.200 # pei sheet
+
+0.3mm nozzle
+pressure_advance: 0.12
